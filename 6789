@@ -1,0 +1,94 @@
+```html
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的第一個網頁</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, "Microsoft JhengHei", sans-serif;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 40px;
+            background: white;
+            border-radius: 16px;
+        }
+
+        img {
+            width: 400px;
+            max-width: 100%;
+            border-radius: 12px;
+        }
+
+        a {
+            display: inline-block;
+            margin: 20px;
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        button {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            background: #111827;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #374151;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>我的第一個網頁</h1>
+
+        <!-- img：圖片 -->
+        <img 
+            src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800"
+            alt="男裝展示圖片"
+        >
+
+        <p>這是一個包含圖片、連結與按鈕的基本網頁。</p>
+
+        <!-- a：超連結 -->
+        <a href="https://www.google.com" target="_blank">
+            前往 Google
+        </a>
+
+        <br>
+
+        <!-- button：按鈕 -->
+        <button onclick="showMessage()">
+            點我一下
+        </button>
+
+    </div>
+
+    <script>
+        function showMessage() {
+            alert("你按下了按鈕！");
+        }
+    </script>
+
+</body>
+</html>
+```
